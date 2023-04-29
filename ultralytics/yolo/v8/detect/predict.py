@@ -8,6 +8,7 @@ from ultralytics.yolo.utils import DEFAULT_CONFIG, ROOT, ops
 from ultralytics.yolo.utils.checks import check_imgsz
 from ultralytics.yolo.utils.plotting import Annotator, colors, save_one_box
 
+import easyocr
 import cv2
 reader = easyocr.Reader(['en'], gpu=True)
 def ocr_image(img,coordinates):
